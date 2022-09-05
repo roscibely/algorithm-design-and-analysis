@@ -15,5 +15,7 @@ Na tentativa e erro, se a solução atual não for adequada, retrocedemos e tent
 
 ### Exemplos: 
 
-    Problema 1) Implemente um algoritmo que recebe como entrada um vetor de letras e encontre toda a ordem possível de arranjos de um determinado conjunto de letras. Quando escolhemos um par, aplicamos o backtracking para verificar se esse par exato já foi criado ou não. Se ainda não tiver sido criado, o par será adicionado à lista de respostas, caso contrário, será ignorado.
+Problema 1) Implemente um algoritmo que recebe como entrada um vetor de letras e encontre toda a ordem possível de arranjos de um determinado conjunto de letras. Quando escolhemos um par, aplicamos o backtracking para verificar se esse par exato já foi criado ou não. Se ainda não tiver sido criado, o par será adicionado à lista de respostas, caso contrário, será ignorado.
             Exemplo: Dado como entrada ['a', 'b', 'c']. A saída deve ser ['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']. 
+
+Problema 2) [Problema da Mochila] O tamanho da mochila é w, o número de itens é n, e o peso e o valor de cada item correspondem a w[i] e v[i], respectivamente. Encontre o valor máximo dos itens na mochila.
