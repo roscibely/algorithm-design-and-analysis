@@ -9,25 +9,30 @@ def knapSack(maximum_weight,list_of_weights,list_of_values,number_of_items):
         number_of_items:  number of items (int)
 
     Returns:
-        maximum value (list)
+        maximum value (list) [value, [list of objects], weight]
     """
     
     if(maximum_weight == 0 or number_of_items == 0):
-        return [0,[]]
+        return [0,[], 0]
         
     if(list_of_weights[number_of_items-1] > maximum_weight):
         # discard the last item
         return knapSack(maximum_weight,list_of_weights,list_of_values,number_of_items-1)
-        
-    set1 = knapSack(maximum_weight-list_of_weights[n-1],list_of_weights,list_of_values,number_of_items-1)
-    set2 = knapSack(maximum_weight,list_of_weights,list_of_values,number_of_items-1)
+   
+    candidate_state_1 = knapSack(maximum_weight-list_of_weights[number_of_items-1],list_of_weights,list_of_values,number_of_items-1)
+    candidate_state_2 = knapSack(maximum_weight,list_of_weights,list_of_values,number_of_items-1)
     
-    if(set1[0]+list_of_values[number_of_items-1] > set2[0]):
-        set1[1].append(number_of_items-1)
-        set1[0] += list_of_values[number_of_items-1]
-        return set1
+    if(candidate_state_1[0]+list_of_values[number_of_items-1] > candidate_state_2[0]):
+        # add the object to the list
+        candidate_state_1[1].append(number_of_items-1)
+        # sum the value of the objects
+        candidate_state_1[0] += list_of_values[number_of_items-1]
+        candidate_state_1[2] += list_of_weights[number_of_items-1]
+
+        return candidate_state_1
+
     else:
-        return set2
+        return candidate_state_2
 
 if __name__ == "__main__":
     maximum_weight = 8
