@@ -25,3 +25,16 @@ DivideAndConquer(a, m, n)
    return(d)
 }
 ```
+#### Vantagens do Algoritmo Dividir e Conquistar
+
+* O algoritmo de divisão e conquista é fácil e eficaz para resolver problemas difíceis, dividindo-os em subproblemas
+* O algoritmo de divisão e conquista é frequentemente usado em algoritmos de classificação como classificação por mesclagem, classificação rápida, etc.
+* Também é usado em algoritmos de busca como busca linear e busca binária
+* É melhor usar o algoritmo de divisão e conquista ao lidar com números flutuantes.
+     
+
+
+#### Desvantagens do Algoritmo Dividir e Conquistar
+
+* No algoritmo de divisão e conquista, a recursão do subproblema é lenta
+* Para alguns problemas específicos, o método de dividir e conquistar torna-se complicado em comparação com o método iterativo
