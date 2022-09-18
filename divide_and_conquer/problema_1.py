@@ -9,11 +9,11 @@ def tower_of_Hanoi(N , source, destination, auxiliary):
     """
     if N==1:
 	    print("Mova o disco 1 da torre",source,"para torre",destination)
-	    return
-    
+	    return  
+         
     tower_of_Hanoi(N-1, source, auxiliary, destination)
     print("Mova o disco",N,"da torre",source,"para torre",destination)
     tower_of_Hanoi(N-1, auxiliary, destination, source)
 
 if __name__ == "__main__":
-    tower_of_Hanoi(3, 'A', 'C', 'B')		
+    tower_of_Hanoi(3, 'A', 'C', 'B')
