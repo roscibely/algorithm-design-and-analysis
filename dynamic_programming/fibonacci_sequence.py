@@ -23,7 +23,7 @@ class FibonacciSequence():
         return self.fibonacciRecursive(n-1) + self.fibonacciRecursive(n-2)
 
 
-    def fibonacciBottomUp(self, n, table = {},):
+    def fibonacciBottomUp(self, n, table = {}):
         """
         A bottom-up approach to the Fibonacci Sequence.
 
@@ -60,7 +60,7 @@ class FibonacciSequence():
 
 
 if __name__ == "__main__":
-    N= 20
+    N= 40
     fibonacci = FibonacciSequence()
     start = time.time()
     print(fibonacci.fibonacciTopDown(N))
@@ -75,4 +75,4 @@ if __name__ == "__main__":
     start = time.time()
     print(fibonacci.fibonacciRecursive(N))
     end = time.time()
-    print("Tempo Total de Execução - Fibonacci Recursive: ", round(end - start, 2)*(10**3), "milissegundos")
+    print("Tempo Total de Execução - Fibonacci Recursive: ", round(end - start, 20)*(10**3), "milissegundos")

@@ -11,7 +11,7 @@ def knapsack(capacity, weights, values):
     table = [[0 for x in range(capacity + 1)] for x in range(len(values) + 1)]
 
 
-    for i in range(len(values) + 1):
+    for i in range(len(values) + 1): 
         for w in range(capacity + 1):
             if i == 0 or w == 0:
                 table[i][w] = 0
@@ -23,7 +23,7 @@ def knapsack(capacity, weights, values):
     return table[len(values)][capacity]
 
 if __name__ == "__main__":
-    capacity = 8
-    weights = [2, 3, 4, 5]
-    values = [3, 5, 6, 10]
+    capacity = 5
+    weights = [4, 2, 1, 3]
+    values = [500, 400, 300, 450]
     print(knapsack(capacity, weights, values))
