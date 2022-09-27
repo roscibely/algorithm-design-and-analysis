@@ -10,13 +10,15 @@ def greedy(capacidade, lista):
         list: lista de arquivos que cabem no pendrive
     
     """
-    lista.sort(reverse=True)
     soma = 0
     for i in lista:
+        if capacidade-i<0:
+            continue
+        capacidade -= i
         soma += i
         print('Arquivo: ',i, 'Mb')
         print('Espaço total ocupado', soma, 'Mb')
-        if soma >= capacidade:
+        if capacidade<=0:
             print('Capacidade total do pendrive atingida')
             return lista.index(i) + 1
     return 0
