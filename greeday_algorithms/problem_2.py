@@ -17,7 +17,7 @@ def greedy(capacidade_da_mochila, pesos, valores):
         soma += valores[i]
         print('Peso: ', pesos[i], 'Kg')
         print('Valor total: ', soma, 'R$')
-        if capacidade_da_mochila <= 0:
+        if capacidade_da_mochila == 0:
             print('Capacidade total da mochila atingida')
             return i + 1
     return 0

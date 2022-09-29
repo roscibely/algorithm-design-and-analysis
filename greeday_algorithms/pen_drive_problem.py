@@ -18,7 +18,7 @@ def greedy(capacidade, lista):
         soma += i
         print('Arquivo: ',i, 'Mb')
         print('Espaço total ocupado', soma, 'Mb')
-        if capacidade<=0:
+        if capacidade==0:
             print('Capacidade total do pendrive atingida')
             return lista.index(i) + 1
     return 0
