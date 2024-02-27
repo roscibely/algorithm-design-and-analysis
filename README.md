@@ -1,6 +1,6 @@
 <div>
 
-  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/main/Ufersa.png" width="70" height="100">
+  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/main/root/Ufersa.png" width="70" height="100">
 </div>
 
 
@@ -13,6 +13,6 @@ Repository for Algorithm Design and Analysis subject/course on Software Engineer
 
 
 <div>
-  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/develop/ufersa.jpg" width="700" height="250">
+  <img src="https://github.com/roscibely/algorithms-and-data-structure/blob/develop/root/ufersa.jpg" width="700" height="250">
 </div>
 <i>UFERSA - Campus Pau dos Ferros</i>
